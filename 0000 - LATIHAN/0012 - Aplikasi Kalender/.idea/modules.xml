@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/0012 - Aplikasi Kalender.iml" filepath="$PROJECT_DIR$/0012 - Aplikasi Kalender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../0013 - Prediksi Hari/0013 - Prediksi Hari.iml" filepath="$PROJECT_DIR$/../0013 - Prediksi Hari/0013 - Prediksi Hari.iml" />
+    </modules>
+  </component>
+</project>

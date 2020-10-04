@@ -48,7 +48,6 @@ public class KonversiTipeData {
         System.out.printf("Nilai c = %.0f dan Nilai d = %d \n", c, d);
         System.out.println("Nilai c / d = " + hasil2);
 
-
-
+                
     }
 }
