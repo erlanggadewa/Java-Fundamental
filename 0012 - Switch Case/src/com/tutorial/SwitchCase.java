@@ -41,11 +41,6 @@ public class SwitchCase {
                     break;
                 default :
                     System.out.println("Operasi Tidak Berjalan");
-
-
             }
-
-
-
     }
 }

@@ -5,9 +5,9 @@ public class PrediksiHari {
 
     private static void oneYearNormal(long tanggalKeN, long tahun) {
         int     topRange1 = 31, topRange2 = topRange1 + 28, topRange3 = topRange2 + 31,
-                topRange4 = topRange3 + 30, topRange5 = topRange4 + 31, topRange6 = topRange5 + 30,
-                topRange7 = topRange6 + 31, topRange8 = topRange7 + 31, topRange9 = topRange8 + 30,
-                topRange10 = topRange9 + 31, topRange11 = topRange10 + 30, topRange12 = topRange11 + 31;
+        topRange4 = topRange3 + 30, topRange5 = topRange4 + 31, topRange6 = topRange5 + 30,
+        topRange7 = topRange6 + 31, topRange8 = topRange7 + 31, topRange9 = topRange8 + 30,
+        topRange10 = topRange9 + 31, topRange11 = topRange10 + 30, topRange12 = topRange11 + 31;
 
         if (tanggalKeN >= 1 && tanggalKeN <= topRange1) {
             System.out.println("Hari ke N adalah " + (tanggalKeN)  + " Januari " + tahun);
@@ -33,25 +33,25 @@ public class PrediksiHari {
             System.out.println("Hari ke N adalah " + (tanggalKeN - topRange10) + " November " + tahun);
         } else if (tanggalKeN > topRange11 && tanggalKeN <= topRange12) {
             System.out.println("Hari ke N adalah " + (tanggalKeN - topRange11) + " Desember " + tahun);
-        } else if ((tanggalKeN > topRange12) && ((((tahun + 1) % 4 == 0) && (tahun + 1) % 100 != 0) || ((tahun + 1) % 400 == 0))){
-            tanggalKeN -= topRange12;
-            tahun+= 1;
-            System.out.println("CP 1" + tahun);
-            oneYearKabisat(tanggalKeN,tahun);
-        } else if ((tanggalKeN > topRange12) && (((tahun + 1) % 4 == 0) && ((tahun + 1) % 100 !=0))) {
+        } else if ((tanggalKeN > topRange12) && ((tahun + 1) % 400 == 0)) {
             tanggalKeN -= topRange12;
             tahun += 1;
-            System.out.println("CP 2" + tahun);
+            // System.out.println("CP 1 " + tahun);
+            oneYearKabisat(tanggalKeN, tahun);
+        } else if ((tanggalKeN > topRange12) && (((tahun + 1) % 400 != 0) && ((tahun + 1) % 100 == 0))) {
+            tanggalKeN -= topRange12;
+            tahun += 1;
+            // System.out.println("CP 2 " + tahun);
             oneYearNormal(tanggalKeN, tahun);
-        } else if ((tanggalKeN > topRange12) && ((tahun + 1) % 4 == 0)){
+        } else if ((tanggalKeN > topRange12) && (((tahun + 1) % 400 != 0) && ((tahun + 1) % 100 != 0) && ((tahun + 1) % 4 == 0))){
             tanggalKeN -= topRange12;
             tahun+= 1;
-            System.out.println("CP 3" + tahun);
+            // System.out.println("CP 3 " + tahun);
             oneYearKabisat(tanggalKeN,tahun);
-        } else if ((tanggalKeN > topRange12) && ((tahun + 1) % 4 != 0)) {
+        } else if ((tanggalKeN > topRange12) && (((tahun + 1) % 400 != 0) && ((tahun + 1) % 100 != 0) && ((tahun + 1) % 4 != 0))) {
             tanggalKeN -= topRange12;
             tahun += 1;
-            System.out.println("CP 4" + tahun);
+            // System.out.println("CP 4 " + tahun);
             oneYearNormal(tanggalKeN, tahun);
         } else {
             System.out.println(tahun);
@@ -61,9 +61,9 @@ public class PrediksiHari {
 
     private static void oneYearKabisat(long tanggalKeN, long tahun) {
         int     topRange1 = 31, topRange2 = topRange1 + 29, topRange3 = topRange2 + 31,
-                topRange4 = topRange3 + 30, topRange5 = topRange4 + 31, topRange6 = topRange5 + 30,
-                topRange7 = topRange6 + 31, topRange8 = topRange7 + 31, topRange9 = topRange8 + 30,
-                topRange10 = topRange9 + 31, topRange11 = topRange10 + 30, topRange12 = topRange11 + 31;
+        topRange4 = topRange3 + 30, topRange5 = topRange4 + 31, topRange6 = topRange5 + 30,
+        topRange7 = topRange6 + 31, topRange8 = topRange7 + 31, topRange9 = topRange8 + 30,
+        topRange10 = topRange9 + 31, topRange11 = topRange10 + 30, topRange12 = topRange11 + 31;
 
         if (tanggalKeN >= 1 && tanggalKeN <= topRange1) {
             System.out.println("Hari ke N adalah " + (tanggalKeN)  + " Januari " + tahun);
@@ -89,11 +89,28 @@ public class PrediksiHari {
             System.out.println("Hari ke N adalah " + (tanggalKeN - topRange10) + " November " + tahun);
         } else if (tanggalKeN > topRange11 && tanggalKeN <= topRange12) {
             System.out.println("Hari ke N adalah " + (tanggalKeN - topRange11) + " Desember " + tahun);
-        } else if (tanggalKeN > topRange12){
+        } else if ((tanggalKeN > topRange12) && ((tahun + 1) % 400 == 0)) {
+            tanggalKeN -= topRange12;
+            tahun += 1;
+            // System.out.println("CP 5 " + tahun);
+            oneYearKabisat(tanggalKeN, tahun);
+        } else if ((tanggalKeN > topRange12) && (((tahun + 1) % 400 != 0) && ((tahun + 1) % 100 == 0))) {
+            tanggalKeN -= topRange12;
+            tahun += 1;
+            // System.out.println("CP 6 " + tahun);
+            oneYearNormal(tanggalKeN, tahun);
+        } else if ((tanggalKeN > topRange12) && (((tahun + 1) % 400 != 0) && ((tahun + 1) % 100 != 0) && ((tahun + 1) % 4 == 0))){
             tanggalKeN -= topRange12;
             tahun+= 1;
-            oneYearNormal(tanggalKeN,tahun);
+            // System.out.println("CP 7 " + tahun);
+            oneYearKabisat(tanggalKeN,tahun);
+        } else if ((tanggalKeN > topRange12) && (((tahun + 1) % 400 != 0) && ((tahun + 1) % 100 != 0) && ((tahun + 1) % 4 != 0))) {
+            tanggalKeN -= topRange12;
+            tahun += 1;
+            // System.out.println("CP 8 " + tahun);
+            oneYearNormal(tanggalKeN, tahun);
         } else {
+            System.out.println(tahun);
             System.out.println("ERROR 2");
         }
     }
@@ -102,12 +119,12 @@ public class PrediksiHari {
         long tanggalKeN = inputTanggal + hariKeN;
 
 //      TAHUN KABISAT
-        if ((((inputTahun + 1) % 4 == 0) && (inputTahun + 1) % 100 != 0) || ((inputTahun + 1) % 400 == 0)) {
+        if ((inputTahun % 400 == 0) && ((inputTahun % 400 != 0) && (inputTahun % 100 != 0) || (inputTahun % 4 == 0) )) {
 
             int topRange1 = 31, topRange2 = topRange1 + 29, topRange3 = topRange2 + 31,
-                    topRange4 = topRange3 + 30, topRange5 = topRange4 + 31, topRange6 = topRange5 + 30,
-                    topRange7 = topRange6 + 31, topRange8 = topRange7 + 31, topRange9 = topRange8 + 30,
-                    topRange10 = topRange9 + 31, topRange11 = topRange10 + 30;
+            topRange4 = topRange3 + 30, topRange5 = topRange4 + 31, topRange6 = topRange5 + 30,
+            topRange7 = topRange6 + 31, topRange8 = topRange7 + 31, topRange9 = topRange8 + 30,
+            topRange10 = topRange9 + 31, topRange11 = topRange10 + 30;
 
             if (inputBulan == 1) {
                 oneYearKabisat(tanggalKeN, inputTahun);
@@ -139,9 +156,9 @@ public class PrediksiHari {
         } else {
 
             int     topRange1 = 31, topRange2 = topRange1 + 28, topRange3 = topRange2 + 31,
-                    topRange4 = topRange3 + 30, topRange5 = topRange4 + 31, topRange6 = topRange5 + 30,
-                    topRange7 = topRange6 + 31, topRange8 = topRange7 + 31, topRange9 = topRange8 + 30,
-                    topRange10 = topRange9 + 31, topRange11 = topRange10 + 30;
+            topRange4 = topRange3 + 30, topRange5 = topRange4 + 31, topRange6 = topRange5 + 30,
+            topRange7 = topRange6 + 31, topRange8 = topRange7 + 31, topRange9 = topRange8 + 30,
+            topRange10 = topRange9 + 31, topRange11 = topRange10 + 30;
 
             if (inputBulan == 1) {
                 oneYearNormal(tanggalKeN,inputTahun);
