@@ -1,20 +1,14 @@
 import java.util.Scanner;
-public class Main{
-	public static void main(String[]args){
-		Scanner chan = new Scanner(System.in);
-		int n = chan.nextInt();
-		int temp = n;
-		int r,sum = 0;
-		
-		while (n > 0){
-			r = n % 10;
-			n = n / 10;
-			sum = sum + r*r*r;
-		}
-		if(temp <= sum){
-			System.out.println("YA");
-		}else{
-			System.out.println("BUKAN");
-		}
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner inputNafidz = new Scanner(System.in);
+		double angka1 = inputNafidz.nextDouble();
+		double angka2 = inputNafidz.nextDouble();
+		double angka3 = inputNafidz.nextDouble();
+		double angka4 = inputNafidz.nextDouble();
+		double hasil = (angka1 + angka2 + angka3 + angka4) / 4;
+		System.out.printf("rata - ratanya adalah %.6f", hasil);
+		inputNafidz.close();
 	}
 }
