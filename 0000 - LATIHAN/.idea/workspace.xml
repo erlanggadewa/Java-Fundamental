@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d1e786e-45fc-4160-907d-aeb688820973" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Fundamental-Java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/6706201053_ERLANGGA_DEWA_SAKTI_D3IF_44_03_LATIHAN_MODUL_3_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/D3IF_44_03_ERLANGGA_DEWA_SAKTI_6706201053.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0011 - Percobaan/wkwk.java" beforeDir="false" afterPath="$PROJECT_DIR$/0011 - Percobaan/wkwk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/0024 - Pass By Reference Array/com/tutorial/PassByReference.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1hktNBjds4LoFD0JUt2MR4kDjFN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RunManager">
+    <configuration name="PecahanUang" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PecahanUang" />
+      <module name="0010 - Pecahan Uang" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d1e786e-45fc-4160-907d-aeb688820973" name="Default Changelist" comment="" />
+      <created>1600566876346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600566876346</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1604072771668">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1604072771668" />
+    <state x="141" y="0" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600596067316">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="141" y="0" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.736@0.0.1366.736" timestamp="1600596067316" />
+    <state x="534" y="154" key="FileChooserDialogImpl" timestamp="1604072944787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="534" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604072944787" />
+    <state width="522" height="585" key="GridCell.Tab.0.bottom" timestamp="1600570091984">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="522" height="585" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1600570091984" />
+    <state width="522" height="585" key="GridCell.Tab.0.center" timestamp="1600570091983">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="522" height="585" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1600570091983" />
+    <state width="522" height="585" key="GridCell.Tab.0.left" timestamp="1600570091983">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="522" height="585" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1600570091983" />
+    <state width="522" height="585" key="GridCell.Tab.0.right" timestamp="1600570091983">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state width="522" height="585" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1600570091983" />
+    <state x="277" y="0" key="SettingsEditor" timestamp="1604072829353">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604072829353" />
+    <state x="278" y="104" width="804" height="530" key="Vcs.Push.Dialog.v2" timestamp="1600569817620">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="278" y="104" width="804" height="530" key="Vcs.Push.Dialog.v2/0.0.1366.736@0.0.1366.736" timestamp="1600569817620" />
+    <state x="-12" y="0" width="1360" height="736" key="new project wizard" timestamp="1604072946799">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-11" y="0" width="1360" height="736" key="new project wizard/0.0.1366.736@0.0.1366.736" timestamp="1600596115463" />
+    <state x="-12" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1604072946799" />
+  </component>
+</project>
