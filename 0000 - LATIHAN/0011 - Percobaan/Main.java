@@ -1,14 +1,33 @@
-import java.util.Scanner;
+import java.util.Scanner;	
+	public class Soal01 {
+			public static void main (String[] args) {
+				double nilaiKesatu, nilaiKedua, hasil;
+				Scanner caca = new Scanner(System.in);
+					nilaiKesatu = caca.nextDouble();
+					char operasi = caca.next().charAt(0);
+					nilaiKedua = caca.nextDouble();
 
-public class Main {
-	public static void main(String[] args) {
-		Scanner inputNafidz = new Scanner(System.in);
-		double angka1 = inputNafidz.nextDouble();
-		double angka2 = inputNafidz.nextDouble();
-		double angka3 = inputNafidz.nextDouble();
-		double angka4 = inputNafidz.nextDouble();
-		double hasil = (angka1 + angka2 + angka3 + angka4) / 4;
-		System.out.printf("rata - ratanya adalah %.6f", hasil);
-		inputNafidz.close();
-	}
-}
+					switch (operasi){
+						case '+' :
+							hasil = nilaiKesatu + nilaiKedua;
+							System.out.printf("%.3f", hasil);
+						break;
+						case '-' :
+							hasil = nilaiKesatu - nilaiKedua;
+							System.out.printf("%.3f", hasil);
+						break;
+						case '*' :
+							hasil = nilaiKesatu * nilaiKedua;
+							System.out.printf("%.3f", hasil);
+						break;
+						case '/' :
+							hasil = nilaiKesatu / nilaiKedua;
+							System.out.printf("%.3f", hasil);
+						break;
+						case'^' :
+							hasil = Math.pow(nilaiKesatu, nilaiKedua);
+							System.out.printf("%.3f", hasil);
+						break;
+					}
+			}
+		}
