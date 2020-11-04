@@ -3,23 +3,20 @@ import java.util.*;
 public class SegitigaPascalMin {
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
-        int sukuN = userInput.nextInt();
+        int input = userInput.nextInt();
 
-        for (int baris = 1; baris <= sukuN; baris++) {
-            for (int spasi = 1; spasi <= sukuN - baris; spasi++) {
+        for (int line = 1; line <= input; line++) {
+            for (int space = input; space > line; space--) {
                 System.out.print(" ");
             }
-
             int pascal = 1;
-
-            for (int angkaKe = 1; angkaKe <= baris; angkaKe++) {
+            System.out.print(pascal + " ");
+            for (int nthTerm = 1; nthTerm < line; nthTerm++) {
+                pascal = pascal * (line - nthTerm) / nthTerm;
                 System.out.print(pascal + " ");
-                pascal = pascal * (baris - angkaKe) / angkaKe;
             }
-
             System.out.println();
         }
-
         userInput.close();
     }
 }
