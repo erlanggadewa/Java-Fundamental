@@ -2,18 +2,15 @@ import java.util.Scanner;
 
 public class wkwk {
 	public static void main(String[] args) {
-		Scanner userInput = new Scanner(System.in);
-		int input = userInput.nextInt() + 8;
-		int output, checkPoint = 0;
-		do {
-			checkPoint++;
-			input = input - 8;
-			if (input >= 8) {
-				output = 8;
-			} else {
-				output = input % 8;
+		for (int i = 1; i <= 3; i++) {
+			for (int j = 1; j <= 5; j++) {
+				if (j % 2 == 0) {
+					System.out.print("*");
+				} else {
+					System.out.print("-");
+				}
 			}
-			System.out.printf("K%d penumpang = %d\n", checkPoint, output);
-		} while (output == 8);
+			System.out.println();
+		}
 	}
 }
