@@ -1,33 +1,31 @@
-import java.util.Scanner;	
-	public class Soal01 {
-			public static void main (String[] args) {
-				double nilaiKesatu, nilaiKedua, hasil;
-				Scanner caca = new Scanner(System.in);
-					nilaiKesatu = caca.nextDouble();
-					char operasi = caca.next().charAt(0);
-					nilaiKedua = caca.nextDouble();
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
 
-					switch (operasi){
-						case '+' :
-							hasil = nilaiKesatu + nilaiKedua;
-							System.out.printf("%.3f", hasil);
-						break;
-						case '-' :
-							hasil = nilaiKesatu - nilaiKedua;
-							System.out.printf("%.3f", hasil);
-						break;
-						case '*' :
-							hasil = nilaiKesatu * nilaiKedua;
-							System.out.printf("%.3f", hasil);
-						break;
-						case '/' :
-							hasil = nilaiKesatu / nilaiKedua;
-							System.out.printf("%.3f", hasil);
-						break;
-						case'^' :
-							hasil = Math.pow(nilaiKesatu, nilaiKedua);
-							System.out.printf("%.3f", hasil);
-						break;
-					}
-			}
-		}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner masukan = new Scanner(System.in);
+
+        ArrayList < String > dataArisan = new ArrayList<>();
+        String nama = "";
+
+        do {
+            // ? INPUT NAMA
+            nama = masukan.next();
+            // ? MEMBUAT - TIDAK IKUT KEDALAM ARRAYLIST
+            if (!nama.equals("-")) {
+                dataArisan.add(nama); // ? A, B, C,
+            }
+        } while (!nama.equals("-"));
+
+        Random acak = new Random();
+        //  ?    3                 3
+        int banyakOrang = dataArisan.size();
+        //  ?                    0 <= x < 3 --> 0 1 2 
+        int angkaAcak = acak.nextInt(banyakOrang);
+        // ? array = [A, B, C] 
+        // ?   INDEX  0  1  2
+        System.out.println(dataArisan.get(angkaAcak));
+    }
+}
