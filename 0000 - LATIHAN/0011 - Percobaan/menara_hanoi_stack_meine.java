@@ -1,17 +1,15 @@
 import java.util.Stack;
 import java.util.Scanner;
 
-class menara_hanoi_stack_meine
-{
-    static Stack<Integer>[] menara = new Stack[4];
+class menara_hanoi_stack_meine {
+    static Stack < Integer > [] menara = new Stack[4];
     static int n;
 
-    public static void main(final String[] args)
-    {
+    public static void main(final String[] args) {
         final Scanner in = new Scanner(System.in);
-        menara[1] = new Stack<Integer>();
-        menara[2] = new Stack<Integer>();
-        menara[3] = new Stack<Integer>();
+        menara[1] = new Stack < Integer > ();
+        menara[2] = new Stack < Integer > ();
+        menara[3] = new Stack < Integer > ();
 
         System.out.println();
         artMenaraHanoi();
@@ -27,7 +25,7 @@ class menara_hanoi_stack_meine
         System.out.println("\t-> Diska bernilai kecil harus di atas diska bernilai besar");
 
         System.out.print("\nMASUKKAN JUMLAH DISKA\nIN :: ");
-        final int num = in.nextInt();
+        final int num = in .nextInt();
         System.out.println();
         n = num;
 
@@ -36,11 +34,10 @@ class menara_hanoi_stack_meine
 
         System.out.println("TOTAL PROSES EFEKTIF :: " + ((int) Math.pow(2, n) - 1));
 
-        in.close();
+        in .close();
     }
 
-    static void artMenaraHanoi()
-    {
+    static void artMenaraHanoi() {
         System.out.println();
         System.out.println("      |      _   _  __  _  _  ___  _");
         System.out.println("     / \\    | |_| |/  \\| \\| |/   \\| |   ____   _____  __   ____ _  __");
@@ -58,8 +55,7 @@ class menara_hanoi_stack_meine
         System.out.println("\n");
     }
 
-    static void mhs(final int n)
-    {
+    static void mhs(final int n) {
         for (int a = n; a > 0; a--)
             menara[1].push(a);
 
@@ -70,10 +66,8 @@ class menara_hanoi_stack_meine
         pindah(n, 1, 2, 3);
     }
 
-    static void pindah(final int n, final int a, final int b, final int c)
-    {
-        if (n > 0)
-        {
+    static void pindah(final int n, final int a, final int b, final int c) {
+        if (n > 0) {
             pindah(n - 1, a, c, b);
 
             final int d = menara[a].pop();
@@ -84,41 +78,33 @@ class menara_hanoi_stack_meine
         }
     }
 
-    static void out()
-    {
+    static void out() {
         System.out.println("                       MENARA 1    MENARA 2    MENARA 3");
         System.out.println("                          |           |           |");
         System.out.println("                         / \\         / \\         / \\");
 
-        for(int a = n - 1; a >= 0; a--)
-        {
+        for (int a = n - 1; a >= 0; a--) {
             System.out.print("Tumpukan tingkat " + (a + 1) + " ");
             String menara1 = " ", menara2 = " ", menara3 = " ";
 
-            try
-            {
+            try {
                 menara1 = String.valueOf(menara[1].get(a));
-            } catch (final Exception e)
-            {}
+            } catch (final Exception e) {}
 
-            try
-            {
+            try {
                 menara2 = String.valueOf(menara[2].get(a));
-            } catch (final Exception e)
-            {}
+            } catch (final Exception e) {}
 
-            try
-            {
+            try {
                 menara3 = String.valueOf(menara[3].get(a));
-            } catch (final Exception e)
-            {}
+            } catch (final Exception e) {}
 
             System.out.println("\t/ " + menara1 + " \\       / " + menara2 + " \\       / " + menara3 + " \\");
-            
-            if(a != 0)
+
+            if (a != 0)
                 System.out.println("                        |   |       |   |       |   |");
 
-            else if(a == 0)
+            else if (a == 0)
                 System.out.println("                       _|___|_     _|___|_     _|___|_");
         }
 
