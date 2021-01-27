@@ -1,4 +1,4 @@
-# Fundamental-Java
+# Java Fundamental
 
 This repository just for practice to learn about Java language and this code is open source for everyone.
 
